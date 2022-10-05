@@ -44,7 +44,11 @@ function Header() {
         <p className="hidden lg:inline">Kids</p>
         <BiBell className="h-6 w-6" />
         <Link href={'/account'}>
-          <img src="https://rb.gy/g1pwyx" alt="" className="cursor-pointer rounded" />
+          <img
+            src="https://rb.gy/g1pwyx"
+            alt=""
+            className="cursor-pointer rounded"
+          />
         </Link>
       </div>
     </header>
