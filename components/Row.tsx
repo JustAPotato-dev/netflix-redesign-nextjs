@@ -2,10 +2,11 @@ import { Movie } from '../typings';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import Thumbnail from './Thumbnail';
 import { useRef, useState } from 'react';
+import { DocumentData } from 'firebase/firestore';
 
 interface Props {
   title: string;
-  movies: Array<Movie>;
+  movies: Array<Movie> | Array<DocumentData>;
 }
 
 function Row({ title, movies }: Props) {
@@ -18,7 +19,10 @@ function Row({ title, movies }: Props) {
     if (rowRef.current) {
       const { scrollLeft, clientWidth } = rowRef.current;
 
-      const scrollTo = direction === 'left' ? scrollLeft - clientWidth : scrollLeft + clientWidth;
+      const scrollTo =
+        direction === 'left'
+          ? scrollLeft - clientWidth
+          : scrollLeft + clientWidth;
 
       rowRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
     }
