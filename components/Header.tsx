@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { BiBell, BiSearch } from 'react-icons/bi';
 import BasicMenu from './BasicMenu';
+import Image from 'next/image';
+import NetflixLogo from '../public/NetflixLogo.svg';
+import profilePic from '../public/head.png';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,10 +28,11 @@ function Header() {
   return (
     <header className={`${isScrolled && 'bg-[#141414]'}`}>
       <div className="flex items-center space-x-2 md:space-x-10">
-        <img
-          src="https://rb.gy/ulxxee"
+        <Image
+          src={NetflixLogo}
           width={100}
-          height={100}
+          height={40}
+          alt=""
           className="cursor-pointer object-contain"
         />
 
@@ -47,13 +51,11 @@ function Header() {
         <BiSearch className="hidden h-6 w-6 sm:inline" />
         <p className="hidden lg:inline">Kids</p>
         <BiBell className="h-6 w-6" />
-        <Link href={'/account'}>
-          <img
-            src="https://rb.gy/g1pwyx"
-            alt=""
-            className="cursor-pointer rounded"
-          />
-        </Link>
+        <div>
+          <Link href={'/account'}>
+            <Image src={profilePic} alt="" className="cursor-pointer rounded" />
+          </Link>
+        </div>
       </div>
     </header>
   );

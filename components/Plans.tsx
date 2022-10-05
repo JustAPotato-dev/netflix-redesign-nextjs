@@ -7,7 +7,8 @@ import useAuth from '../hooks/useAuth';
 import { loadCheckout } from '../lib/stripe';
 import Loader from './Loader';
 import Table from './Table';
-
+import Image from 'next/image';
+import NetflixLogo from '../public/NetflixLogo.svg';
 interface Props {
   products: Array<Product>;
 }
@@ -33,11 +34,11 @@ function Plans({ products }: Props) {
 
       <header className="border-b border-white/10 bg-[#141414]">
         <Link href="/">
-          <img
-            src="https://rb.gy/ulxxee"
-            alt="Netflix"
+          <Image
+            src={NetflixLogo}
             width={150}
-            height={90}
+            height={40}
+            alt=""
             className="cursor-pointer object-contain"
           />
         </Link>
