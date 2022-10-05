@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { BiBell, BiSearch } from 'react-icons/bi';
+import BasicMenu from './BasicMenu';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,6 +31,9 @@ function Header() {
           height={100}
           className="cursor-pointer object-contain"
         />
+
+        <BasicMenu />
+
         <ul className="hidden space-x-4 md:flex">
           <li className="headerLink">Home</li>
           <li className="headerLink">TV Shows</li>
