@@ -1,27 +1,62 @@
-# Next.js + Tailwind CSS Example
+<a name="readme-top"></a>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+<div align="center">
+  <h3 align="center">Netflix clone</h3>
 
-## Deploy your own
+  <p align="center">
+    A Netflix clone made with Next.js, TailwindCSS and Firebase.
+    <br />
+    <a href="https://github.com/JustAPotato-dev/netflix-redesign-nextjs"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://netflix-redesign-nextjs.vercel.app/login">View Demo</a>
+  </p>
+</div>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## How to use
+[![Netflix clone][product-screenshot]](https://example.com)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+This is a Netflix clone made with Next.js, TailwindCSS and Firebase. It is a redesign of the Netflix website, with a focus on the login page and the homepage.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### Built With
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+* [![Next][Next.js]][Next-url]
+* [![TailwindCSS][TailwindCSS]][TailwindCSS-url]
+* [![Firebase][Firebase]][Firebase-url]
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+- [Typescript NextJS Tutorial: Build a Netflix 🍿 Clone Part 1 - Homepage UI with TailwindCSS](https://www.youtube.com/watch?v=cwqNAkwhKqw)
+- [Typescript NextJS Tutorial: Build a Netflix 🍿 Clone Part 2 - Firebase Auth and RecoilJS](https://www.youtube.com/watch?v=BbTyUo99Qvs)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[product-screenshot]: docs/images/screenshot.jpg
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[TailwindCSS]: https://img.shields.io/badge/tailwindcss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/
+[Firebase]: https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black
+[Firebase-url]: https://firebase.google.com/
